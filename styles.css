@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="styles.css">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* This box ends up 340px wide - why? Fix it! */
+.broken-box {
+    width: 300px;
+    padding: 20px;
+    border: none;
+}
+:root {
+    --font-xs: 0.75rem;    /* 12px */
+    --font-sm: 0.875rem;   /* 14px */
+    --font-base: 1rem;     /* 16px */
+    --font-lg: 1.125rem;   /* 18px */
+    --font-xl: 1.25rem;    /* 20px */
+    --font-2xl: 1.5rem;    /* 24px */
+    --font-3xl: 1.875rem;  /* 30px */
+    --font-4xl: 2.25rem;   /* 36px */
+}
+:root {
+    --color-primary: #orange;
+    --color-secondary: #red;
+    --color-background: #blue;
+    --color-text: #black;
+    --color-muted: #pink;
+  
+    /* Variations */
+    --color-primary-light: #blue;
+    --color-primary-dark: #green;
+}
+[Logo]                    [Home] [About] [Projects] [Contact]
+[About Column]  [Links Column]  [Contact Column]
+              [Copyright - centered]
+[Image 1] [Image 2] [Image 3]
+[Image 4] [Image 5] [Image 6]
+[Header - spans full width        ]
+[Sidebar] [Main Content           ]
+[Sidebar] [Main Content           ]
+[Footer - spans full width        ]
+/* Mobile first - base styles */
+
+/* Tablet */
+@media (min-width: 768px) {
+    /* Tablet styles */
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    /* Desktop styles */
+}
+
+/* Large Desktop */
+@media (min-width: 1280px) {
+    /* Large screen styles */
+}
+/* Buttons */
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Links */
+a:hover {
+    color: var(--color-primary);
+}
+
+/* Cards */
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.button {
+    transition: all 0.3s ease;
+}
+a:focus, button:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
